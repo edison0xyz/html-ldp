@@ -369,11 +369,19 @@
 									<span class="i-overlay nobg"><img src="images/icons/video-play.png" alt="Play"></span>
 								</a>
 							</div>
-							<p class="lead nobottommargin">I'd like to be a Software Engineer in the future. I like to build things, and I love to code! (which is why I developed a website for my assignment). <br><br>Software Engineers are modern artisan, the people who can create the future.  </p>
+							<p class="lead">I like to build things</p>
+                            
+                            <p>And I will become a <strong>Software Engineer</strong> at a technology firm such as Palantir, Facebook or Google in the future. 
+                                </p>
+                            
+                            <p>Software Engineers are modern artisans - craftmen who can create the future with the skills we have.</p>
 						</div>
 					</div>
 
 				</div>
+                
+                
+                
 
 				<div class="section nobottommargin">
 					<div class="container clear-bottommargin clearfix">
@@ -647,7 +655,142 @@
 
 				</div>
 
-				<div class="section topmargin nobottommargin nobottomborder">
+				
+
+				<script type="text/javascript">
+
+					jQuery(window).load(function(){
+
+						var $container = $('#portfolio');
+
+						$container.isotope({
+							transitionDuration: '0.65s',
+							masonry: {
+								columnWidth: $container.find('.portfolio-item:not(.wide)')[0]
+							}
+						});
+
+						$('#page-menu a').click(function(){
+							$('#page-menu li').removeClass('current');
+							$(this).parent('li').addClass('current');
+							var selector = $(this).attr('data-filter');
+							$container.isotope({ filter: selector });
+							return false;
+						});
+
+						$(window).resize(function() {
+							$container.isotope('layout');
+						});
+
+					});
+
+				</script>
+
+				<div class="clear"></div>
+
+
+				
+                    <div class="clear"></div>
+                    
+                    <div class="section dark bottommargin-lg notopmargin nobottommargin" style="height: 500px;">
+					<div class="container center clearfix vertical-middle">
+
+						<i class="i-plain i-xlarge icon-question divcenter bottommargin"></i>
+
+						<div class="slider-caption slider-caption-center">
+							<h2 data-animate="fadeInUp">Where am I now?</h2>
+							<p data-animate="fadeInUp" data-delay="200">I have been working towards my goal for the past two years</p>
+						</div>
+
+					</div>
+					<div class="video-wrap">
+						<video poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
+							<source src='images/videos/explore.mp4' type='video/mp4' />
+							<source src='images/videos/explore.webm' type='video/webm' />
+						</video>
+						<div class="video-overlay" style="background-color: rgba(0,0,0,0.35);"></div>
+					</div>
+				</div>
+                    
+                				<div class="section notopmargin bottommargin nobottomborder">
+					<div class="container clearfix">
+						<div class="heading-block center nomargin">
+							<h3>about me</h3>
+						</div>
+					</div>
+				</div>
+                    
+                <div class="container clearfix">
+
+					<div class="row">
+
+						<div class="col-md-6 bottommargin">
+
+							<div class="accordion accordion-border clearfix nobottommargin">
+
+								<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Brief Introduction </div>
+								<div class="acc_content clearfix">I am Edison, a twenty-something undergraduate. I live in Singapore, and it is my home. </div>
+
+								<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Education</div>
+								<div class="acc_content clearfix">In my third-year of studies at Singapore Management University now, I study Information Systems and we learn about all the tech-stuffs here. </div>
+
+								<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Where have I worked before?</div>
+								<div class="acc_content clearfix">Summer internship in Khoo Teck Puat Hospital - analytics stuffs there. Got raged by R for one hundred times there, and found VBA to be the most amazing tool in making a temporary system for company. Prior to school, I have marketing experience in Keppel Land and SalesForce. </div>
+
+								<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Hobbies</div>
+								<div class="acc_content clearfix">When I am not studying, I enjoying walking around with my guitar, pretending that I know how to play it. I run a lot too, and love weekends where I can chill with my piano.</div>
+
+							</div>
+
+						</div>
+
+						<div class="col-md-6 col-sm-6 bottommargin">
+
+							<div class="fancy-title title-border">
+								<h4>My Skills</h4>
+							</div>
+
+							<ul class="skills">
+								<li data-percent="80">
+									<span>JavaScript</span>
+									<div class="progress">
+										<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="80" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
+									</div>
+								</li>
+								<li data-percent="60">
+									<span>Java</span>
+									<div class="progress">
+										<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="80" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
+									</div>
+								</li>
+								<li data-percent="90">
+									<span>Database (PL/SQL and NoSQL Databases)</span>
+									<div class="progress">
+										<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="70" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
+									</div>
+								</li>
+								<li data-percent="85">
+									<span>front-end development (HTML5/CSS3)</span>
+									<div class="progress">
+										<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="60" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
+									</div>
+								</li>
+								<li data-percent="70">
+									<span>R (data analytics language)</span>
+									<div class="progress">
+										<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="70" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
+									</div>
+								</li>
+							</ul>
+
+						</div>
+
+						</div>
+
+					</div>
+                
+                
+                <div class="section topmargin nobottommargin nobottomborder">
 					<div class="container clearfix">
 						<div class="heading-block center nomargin">
 							<h3>Some of my projects</h3>
@@ -724,62 +867,9 @@
 					
 
 				</div>
-
-				<script type="text/javascript">
-
-					jQuery(window).load(function(){
-
-						var $container = $('#portfolio');
-
-						$container.isotope({
-							transitionDuration: '0.65s',
-							masonry: {
-								columnWidth: $container.find('.portfolio-item:not(.wide)')[0]
-							}
-						});
-
-						$('#page-menu a').click(function(){
-							$('#page-menu li').removeClass('current');
-							$(this).parent('li').addClass('current');
-							var selector = $(this).attr('data-filter');
-							$container.isotope({ filter: selector });
-							return false;
-						});
-
-						$(window).resize(function() {
-							$container.isotope('layout');
-						});
-
-					});
-
-				</script>
-
-				<div class="clear"></div>
-
-				
-				<div class="container clearfix">
-
-					<div class="col_one_third bottommargin-sm center">
-						<img data-animate="fadeInLeft" src="images/services/iphone6.png" alt="Iphone">
-					</div>
-
-					<div class="col_two_third bottommargin-sm col_last">
-
-						<div class="heading-block topmargin-sm">
-							<h3>Optimized for Mobile &amp; Touch Enabled Devices.</h3>
-						</div>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam.</p>
-
-						<a href="#" class="button button-border button-dark button-rounded button-large noleftmargin topmargin-sm">Learn more</a>
-
-					</div>
-
-				</div>
-
-				<div class="section parallax dark nobottommargin" style="background-image: url('images/edison/stars.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.4">
+                    
+                    
+                    <div class="section parallax dark nobottommargin" style="background-image: url('images/edison/stars.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.4">
 
 					<div class="heading-block center">
 						<h3>Inspirational Quotes to remember</h3>
@@ -829,84 +919,6 @@
 					</div>
 
 				</div>
-                    <div class="clear"></div>
-                    
-                				<div class="section topmargin nobottommargin nobottomborder">
-					<div class="container clearfix">
-						<div class="heading-block center nomargin">
-							<h3>about me</h3>
-						</div>
-					</div>
-				</div>
-                    
-                <div class="container clearfix">
-
-					<div class="row">
-
-						<div class="col-md-6 bottommargin">
-
-							<div class="accordion accordion-border clearfix nobottommargin">
-
-								<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Brief Introduction </div>
-								<div class="acc_content clearfix">I am Edison, a twenty-something undergraduate. I live in Singapore, and it is my home. </div>
-
-								<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Education</div>
-								<div class="acc_content clearfix">In my third-year of studies at Singapore Management University now, I study Information Systems and we learn about all the tech-stuffs here. </div>
-
-								<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Where have I worked before?</div>
-								<div class="acc_content clearfix">Summer internship in Khoo Teck Puat Hospital - analytics stuffs there. Got raged by R for one hundred times there, and found VBA to be the most amazing tool in making a temporary system for company. Prior to school, I have marketing experience in Keppel Land and SalesForce. </div>
-
-								<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Hobbies</div>
-								<div class="acc_content clearfix">When I am not studying, I enjoying walking around with my guitar, pretending that I know how to play it. I run a lot too, and love weekends where I can chill with my piano.</div>
-
-							</div>
-
-						</div>
-
-						<div class="col-md-6 col-sm-6 bottommargin">
-
-							<div class="fancy-title title-border">
-								<h4>My Skills</h4>
-							</div>
-
-							<ul class="skills">
-								<li data-percent="80">
-									<span>JavaScript</span>
-									<div class="progress">
-										<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="80" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
-									</div>
-								</li>
-								<li data-percent="60">
-									<span>Java</span>
-									<div class="progress">
-										<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="80" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
-									</div>
-								</li>
-								<li data-percent="90">
-									<span>Database (PL/SQL and NoSQL Databases)</span>
-									<div class="progress">
-										<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="70" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
-									</div>
-								</li>
-								<li data-percent="85">
-									<span>front-end development (HTML5/CSS3)</span>
-									<div class="progress">
-										<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="60" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
-									</div>
-								</li>
-								<li data-percent="70">
-									<span>R (data analytics language)</span>
-									<div class="progress">
-										<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="70" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
-									</div>
-								</li>
-							</ul>
-
-						</div>
-
-						</div>
-
-					</div>
 
 				</div>    
                     
